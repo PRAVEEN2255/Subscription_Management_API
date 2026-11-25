@@ -18,6 +18,7 @@ def show_plans(id_,name,email):
                 payment_mode(id_,name,email,duration)
             elif choose == 2:
                 print("Log out Successfully")
+                break
             else:
                 print("Invalid option")
 
@@ -33,6 +34,7 @@ def show_plans(id_,name,email):
                 payment_mode(id_,name,email,duration)
             elif choose == 2:
                 print("Log out Successfully")
+                break
             else:
                 print("Invalid option")
 
@@ -52,8 +54,7 @@ def show_plans(id_,name,email):
                 print("Invalid option")
 
         elif choose == 4:
-            print("Log out Successfully")
-
+            print("Log out Successfully\n")
             break
         else:
             print("Invalid option")

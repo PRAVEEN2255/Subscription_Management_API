@@ -1,5 +1,5 @@
 import sqlite3 as sql
-
+from Update_plan import update_plan
 from Subscription_Management import show_plans
 def customer_insert(name, email, password):
     conn = sql.connect("customer.db")
@@ -27,7 +27,8 @@ def customer_find(name, email, password):
     while True:
         print("1.Show Plans")
         print("2.Login To Another Account")
-        print("3.Go back")
+        print("3.Update Plan")
+        print("4.Go back")
         choose = int(input("Choose your option: "))
         if choose == 1:
             show_plans(id_,name,email)
@@ -37,6 +38,9 @@ def customer_find(name, email, password):
             password = input("Enter your password: ")
             customer_find(name, email, password)
         elif choose == 3:
+            update_plan(id_,name,email)
+        elif choose == 4:
+            print("Logout Successfully\n")
             break
         else:
             print("Invalid option")

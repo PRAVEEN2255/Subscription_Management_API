@@ -1,7 +1,5 @@
-import _sqlite3 as sql
 import re
 from customer_data_management import *
-from Subscription_Management import *
 def customer_verification():
     while True:
      print("1.Create Customer Account")
